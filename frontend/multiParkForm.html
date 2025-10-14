@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campground Subscription Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Subscribe to a Campground Listing</h1>
+
+  <form id="subscriptionForm">
+    <label for="park">Select Park:</label>
+    <select id="park" name="park"></select>
+
+    <label for="billingCycle">Billing Cycle:</label>
+    <select id="billingCycle" name="billingCycle">
+      <option value="monthly">Monthly</option>
+      <option value="annual">Annual</option>
+    </select>
+
+    <label for="paymentMethod">Payment Method:</label>
+    <select id="paymentMethod" name="paymentMethod">
+      <option value="card">Credit Card</option>
+      <option value="invoice">Invoice</option>
+    </select>
+
+    <p id="priceDisplay">Total: $0.00</p>
+
+    <button type="submit">Subscribe</button>
+  </form>
+
+  <script type="module" src="./multiFormLogic.js"></script>
+</body>
+</html>

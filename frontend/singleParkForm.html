@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Single Park Advertiser</title>
+</head>
+<body>
+  <h1>Advertise Your Park</h1>
+  <form id="singleParkForm">
+    <input type="text" name="businessName" placeholder="Business Name" required />
+    <input type="email" name="ownerEmail" placeholder="Owner Email" required />
+    <input type="tel" name="ownerPhone" placeholder="Owner Phone" required />
+    <input type="text" name="responsibleParty" placeholder="Responsible Party" required />
+    <input type="text" name="state" placeholder="State" required />
+    <input type="text" name="park" placeholder="Park Name" required />
+    <select name="billingCycle" required>
+      <option value="monthly">Monthly</option>
+      <option value="annual">Annual</option>
+    </select>
+    <button type="submit">Pay with Credit Card</button>
+  </form>
+
+  <script src="singleFormLogic.js"></script>
+</body>
+</html>
