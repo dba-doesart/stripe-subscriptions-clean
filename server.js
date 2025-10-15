@@ -138,7 +138,7 @@ app.post("/api/checkout", async (req, res) => {
     parks
   } = req.body;
 
-  let selectedPark = park || (Array.isArray(parks) ? parks[0] : null);
+  let selectedPark = (park || (Array.isArray(parks) ? parks[0] : null))?.replace(/\s+/g, "_");
   let selectedState = state || (Array.isArray(states) ? states[0] : null);
 
   if (!businessName || !ownerEmail || !ownerPhone || !responsibleParty || !selectedState || !selectedPark || !billingCycle || !type) {
