@@ -106,6 +106,7 @@ const priceMap = {
   }
 };
 
+// Unified checkout route
 router.post("/checkout", async (req, res) => {
   console.log("Checkout request body:", req.body);
 
@@ -134,8 +135,8 @@ router.post("/checkout", async (req, res) => {
       line_items: [
         {
           price: priceId,
-          quantity: 1,
-        },
+          quantity: 1
+        }
       ],
       success_url: "https://campgroundguides.com/success",
       cancel_url: "https://campgroundguides.com/cancel",
