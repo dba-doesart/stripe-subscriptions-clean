@@ -121,7 +121,7 @@ const priceMap = {
   }
 };
 
-// 💳 Checkout route with Stripe integration and metadata sanitization
+// 💳 Unified checkout route for single and multi-park
 app.post("/api/checkout", async (req, res) => {
   console.log("Checkout request body:", req.body);
 
@@ -138,8 +138,8 @@ app.post("/api/checkout", async (req, res) => {
     parks
   } = req.body;
 
-  let selectedPark = (park || (Array.isArray(parks) ? parks[0] : null))?.replace(/\s+/g, "_");
-  let selectedState = state || (Array.isArray(states) ? states[0] : null);
+  const selectedPark = (park || (Array.isArray(parks) ? parks[0] : null))?.replace(/\s+/g, "_");
+  const selectedState = state || (Array.isArray(states) ? states[0] : null);
 
   if (!businessName || !ownerEmail || !ownerPhone || !responsibleParty || !selectedState || !selectedPark || !billingCycle || !type) {
     console.warn("Missing required fields");
@@ -188,3 +188,10 @@ app.post("/api/checkout", async (req, res) => {
   } catch (error) {
     console.error("Stripe error:", error.message);
     res.status(500).json({ error: "Stripe session creation failed" });
+  }
+});
+
+// 🚀 Start the server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${
