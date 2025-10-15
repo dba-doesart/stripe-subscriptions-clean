@@ -1,3 +1,38 @@
+const express = require("express");
+const cors = require("cors");
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+
+const app = express();
+app.use(cors());
+app.use(express.json());
+
+// 🔍 Global request logger
+app.use((req, res, next) => {
+  console.log(`Incoming request: ${req.method} ${req.url}`);
+  next();
+});
+
+// 🧪 Ping route to confirm server is alive
+app.get("/api/ping", (req, res) => {
+  res.send("pong");
+});
+
+// 💳 Price ID lookup table (expand this as needed)
+const priceMap = {
+  "Cherokee_Dam_Campground": {
+    single: {
+      monthly: "price_1S6HwdHw2ZCjSnG4uGEurGFu",
+      annual: "price_1S5FsxHw2ZCjSnG43MHiN6hj"
+    },
+    multi: {
+      monthly: "price_1S5F1aHw2ZCjSnG4MSfCkIh1",
+      annual: "price_1S5EgRHw2ZCjSnG4pU8Ooac2"
+    }
+  }
+  // Add other parks here as needed
+};
+
+// 🧾 Checkout route with Stripe integration and multi-park support
 app.post("/api/checkout", async (req, res) => {
   console.log("Checkout request body:", req.body);
 
@@ -14,20 +49,15 @@ app.post("/api/checkout", async (req, res) => {
     parks
   } = req.body;
 
-  // Validate required fields
-  if (!businessName || !ownerEmail || !ownerPhone || !responsibleParty || !billingCycle || !type) {
+  let selectedPark = park || (Array.isArray(parks) ? parks[0] : null);
+  let selectedState = state || (Array.isArray(states) ? states[0] : null);
+
+  if (!businessName || !ownerEmail || !ownerPhone || !responsibleParty || !selectedState || !selectedPark || !billingCycle || !type) {
     console.warn("Missing required fields");
     return res.status(400).json({ error: "Missing required fields in request body" });
   }
 
-  let priceId;
-  let selectedPark = park || (Array.isArray(parks) ? parks[0] : null);
-  let selectedState = state || (Array.isArray(states) ? states[0] : null);
-
-  if (selectedPark && priceMap?.[selectedPark]?.[type]?.[billingCycle]) {
-    priceId = priceMap[selectedPark][type][billingCycle];
-  }
-
+  const priceId = priceMap?.[selectedPark]?.[type]?.[billingCycle];
   console.log("Resolved priceId:", priceId);
 
   if (!priceId) {
@@ -65,4 +95,10 @@ app.post("/api/checkout", async (req, res) => {
     console.error("Stripe error:", error.message);
     res.status(500).json({ error: "Stripe session creation failed" });
   }
+});
+
+// 🚀 Start the server
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
