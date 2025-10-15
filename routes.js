@@ -122,6 +122,10 @@ router.post("/checkout", async (req, res) => {
   } = req.body;
 
   const priceId = priceMap?.[park]?.[type]?.[billingCycle];
+  console.log("park:", park);
+  console.log("type:", type);
+  console.log("billingCycle:", billingCycle);
+  console.log("Resolved priceId:", priceId);
 
   if (!priceId) {
     return res.status(400).json({ error: "Invalid park/type/billingCycle combination" });
