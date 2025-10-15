@@ -121,7 +121,7 @@ const priceMap = {
   }
 };
 
-// 🧾 Checkout route with Stripe integration and multi-park support
+// 💳 Checkout route with Stripe integration and metadata sanitization
 app.post("/api/checkout", async (req, res) => {
   console.log("Checkout request body:", req.body);
 
@@ -154,6 +154,11 @@ app.post("/api/checkout", async (req, res) => {
     return res.status(400).json({ error: "Invalid park/type/billingCycle combination" });
   }
 
+  const clean = (value) =>
+    typeof value === "string"
+      ? value.replace(/[^\w\s\-]/g, "").slice(0, 50)
+      : value;
+
   try {
     const session = await stripe.checkout.sessions.create({
       mode: "subscription",
@@ -168,13 +173,13 @@ app.post("/api/checkout", async (req, res) => {
       success_url: "https://campgroundguides.com/success",
       cancel_url: "https://campgroundguides.com/cancel",
       metadata: {
-        businessName,
-        ownerPhone,
-        responsibleParty,
-        state: selectedState,
-        park: selectedPark,
-        billingCycle,
-        type
+        businessName: clean(businessName),
+        ownerPhone: clean(ownerPhone),
+        responsibleParty: clean(responsibleParty),
+        state: clean(selectedState),
+        park: clean(selectedPark),
+        billingCycle: clean(billingCycle),
+        type: clean(type)
       }
     });
 
@@ -183,11 +188,3 @@ app.post("/api/checkout", async (req, res) => {
   } catch (error) {
     console.error("Stripe error:", error.message);
     res.status(500).json({ error: "Stripe session creation failed" });
-  }
-});
-
-// 🚀 Start the server
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
