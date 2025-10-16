@@ -1,0 +1,921 @@
+[
+  {
+    "productName": "EAGLE_RV_PARK_MULTI_ANNUAL",
+    "priceId": "price_1SIAnBHw2ZCjSnG4kr0MPEgL",
+    "metadata": {
+      "group": "Farook",
+      "name": "Eagle RV Park",
+      "region": "Hobbs NM",
+      "type": "multi",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "EAGLE_RV_PARK_ANNUAL",
+    "priceId": "price_1SIAjVHw2ZCjSnG4M1tpmvb2",
+    "metadata": {
+      "group": "Farook",
+      "name": "Eagle RV Park",
+      "region": "Hobbs NM",
+      "type": "single",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "LEA_CO._RV_PARK_MULTI_ANNUAL",
+    "priceId": "price_1SIAeSHw2ZCjSnG4pH96mRjr",
+    "metadata": {
+      "group": "Farook",
+      "name": "LEA Co. RV Park",
+      "region": "Hobbs NM",
+      "type": "multi",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "LEA_CO._RV_PARK_ANNUAL",
+    "priceId": "price_1SIAZjHw2ZCjSnG4DuDCJ6Wf",
+    "metadata": {
+      "group": "Farook",
+      "name": "Lea Co",
+      "region": "Hobbs NM",
+      "type": "single",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "ZIA_RVILLAS_MULTI_ANNUAL",
+    "priceId": "price_1SIAPFHw2ZCjSnG4RIuCXXoP",
+    "metadata": {
+      "group": "Farook",
+      "name": "ZIA RVillas",
+      "region": "Hobbs NM",
+      "type": "multi",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "ZIA_RVILLAS_ANNUAL",
+    "priceId": "price_1SIAMxHw2ZCjSnG4xVQRSaDT",
+    "metadata": {
+      "group": "Farook",
+      "name": "ZIA RVillas",
+      "region": "Hobbs NM",
+      "type": "single",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "ENERGY_PLEX_MULTI_ANNUAL",
+    "priceId": "price_1SIAGKHw2ZCjSnG4j3bGHEHq",
+    "metadata": {
+      "group": "Farook",
+      "name": "Energy Plex RV Park",
+      "region": "Lovington NM",
+      "type": "multi",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "ENERGY_PLEX_ANNUAL",
+    "priceId": "price_1SI9swHw2ZCjSnG4NOdRJHOZ",
+    "metadata": {
+      "group": "Farook",
+      "name": "Energy Plex RV Park",
+      "region": "Lovington NM",
+      "type": "single",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "ARIZONA_MURAL_TRAIL_MULTI_ANNUAL",
+    "priceId": "price_1SI23BHw2ZCjSnG4C0Lu4KAU",
+    "metadata": {
+      "group": "SASTFA",
+      "name": "AZ Mural Trail",
+      "area_7": "Tribal Nations",
+      "county_1": "Greenlee",
+      "county_2": "Graham",
+      "county_3": "Cochise",
+      "county_4": "Santa Cruz",
+      "county_5": "Pima",
+      "county_6": "Pinal",
+      "region": "Arizona",
+      "type": "multi",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "ARIZONA_MURAL_TRAIL_ANNUAL",
+    "priceId": "price_1SI1rrHw2ZCjSnG4vnWgSVxt",
+    "metadata": {
+      "group": "SASTFA",
+      "name": "AZ Mural Trail",
+      "area": "Tribal Nations",
+      "county_1": "Greenlee",
+      "county_2": "Graham",
+      "county_3": "Cochise",
+      "county_4": "Santa Cruz",
+      "county_5": "Pima",
+      "county_6": "Pinal",
+      "region": "Arizona",
+      "type": "single",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "EAGLE_RV_PARK_MULTI",
+    "priceId": "price_1SHywuHw2ZCjSnG4tyoFlUBi",
+    "metadata": {
+      "group": "Farook",
+      "name": "Eagle RV",
+      "region": "Hobbs NM",
+      "type": "multi",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "LEA_CO._RV_PARK_MULTI",
+    "priceId": "price_1SHypIHw2ZCjSnG4XsnClabP",
+    "metadata": {
+      "group": "Farook",
+      "name": "Lea Co. RV",
+      "region": "Hobbs NM",
+      "type": "multi",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "ZIA_RVILLAS_MULTI",
+    "priceId": "price_1SHykOHw2ZCjSnG4gtWjKlUD",
+    "metadata": {
+      "group": "Farook",
+      "name": "ZIA RVillas",
+      "region": "Hobbs NM",
+      "type": "multi",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "ENERGY_PLEX_MULTI",
+    "priceId": "price_1SHyddHw2ZCjSnG4TXqL527N",
+    "metadata": {
+      "group": "Farook",
+      "name": "Energy Plex RV",
+      "region": "Lovington NM",
+      "type": "multi",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "ARIZONA_MURAL_TRAIL_MULTI",
+    "priceId": "price_1SHyCYHw2ZCjSnG4kp5ivkAR",
+    "metadata": {
+      "group": "SASTFA",
+      "name": "AZ Mural Trail",
+      "region": "Arizona",
+      "county_1": "Greenlee",
+      "county_2": "Graham",
+      "county_3": "Cochise",
+      "county_4": "Santa Cruz",
+      "county_5": "Pima",
+      "county_6": "Pinal",
+      "area_7": "Tribal Nations",
+      "type": "multi",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "ARIZONA_MURAL_TRAIL",
+    "priceId": "price_1SHxh5Hw2ZCjSnG4V3PCyyhd",
+    "metadata": {
+      "group": "SASTFA",
+      "name": "AZ Mural Trail",
+      "region": "Arizona",
+      "county_1": "Greenlee",
+      "county_2": "Graham",
+      "county_3": "Cochise",
+      "county_4": "Santa Cruz",
+      "county_5": "Pima",
+      "county_6": "Pinal",
+      "area_7": "Tribal Nations",
+      "type": "single",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "ENERGY_PLEX_RV_PARK",
+    "priceId": "price_1SHrowHw2ZCjSnG4RfJUJNzz",
+    "metadata": {
+      "group": "Farook",
+      "name": "Energy Plex RV",
+      "region": "Lovington NM",
+      "type": "single",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "ZIA_RVILLAS",
+    "priceId": "price_1SHrnzHw2ZCjSnG4ZUxNX9VO",
+    "metadata": {
+      "group": "Farook",
+      "name": "ZIA RVillas",
+      "region": "Hobbs NM",
+      "type": "single",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "EAGLE_RV_PARK_MULTI_ANNUAL",
+    "priceId": "price_1SIAnBHw2ZCjSnG4kr0MPEgL",
+    "metadata": {
+      "group": "Farook",
+      "name": "Eagle RV Park",
+      "region": "Hobbs NM",
+      "type": "multi",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "EAGLE_RV_PARK_ANNUAL",
+    "priceId": "price_1SIAjVHw2ZCjSnG4M1tpmvb2",
+    "metadata": {
+      "group": "Farook",
+      "name": "Eagle RV Park",
+      "region": "Hobbs NM",
+      "type": "single",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "LEA_CO._RV_PARK_MULTI_ANNUAL",
+    "priceId": "price_1SIAeSHw2ZCjSnG4pH96mRjr",
+    "metadata": {
+      "group": "Farook",
+      "name": "LEA Co. RV Park",
+      "region": "Hobbs NM",
+      "type": "multi",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "LEA_CO._RV_PARK_ANNUAL",
+    "priceId": "price_1SIAZjHw2ZCjSnG4DuDCJ6Wf",
+    "metadata": {
+      "group": "Farook",
+      "name": "Lea Co",
+      "region": "Hobbs NM",
+      "type": "single",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "ZIA_RVILLAS_MULTI_ANNUAL",
+    "priceId": "price_1SIAPFHw2ZCjSnG4RIuCXXoP",
+    "metadata": {
+      "group": "Farook",
+      "name": "ZIA RVillas",
+      "region": "Hobbs NM",
+      "type": "multi",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "ZIA_RVILLAS_ANNUAL",
+    "priceId": "price_1SIAMxHw2ZCjSnG4xVQRSaDT",
+    "metadata": {
+      "group": "Farook",
+      "name": "ZIA RVillas",
+      "region": "Hobbs NM",
+      "type": "single",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "ENERGY_PLEX_MULTI_ANNUAL",
+    "priceId": "price_1SIAGKHw2ZCjSnG4j3bGHEHq",
+    "metadata": {
+      "group": "Farook",
+      "name": "Energy Plex RV Park",
+      "region": "Lovington NM",
+      "type": "multi",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "ENERGY_PLEX_ANNUAL",
+    "priceId": "price_1SI9swHw2ZCjSnG4NOdRJHOZ",
+    "metadata": {
+      "group": "Farook",
+      "name": "Energy Plex RV Park",
+      "region": "Lovington NM",
+      "type": "single",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "ARIZONA_MURAL_TRAIL_MULTI_ANNUAL",
+    "priceId": "price_1SI23BHw2ZCjSnG4C0Lu4KAU",
+    "metadata": {
+      "group": "SASTFA",
+      "name": "AZ Mural Trail",
+      "area_7": "Tribal Nations",
+      "county_1": "Greenlee",
+      "county_2": "Graham",
+      "county_3": "Cochise",
+      "county_4": "Santa Cruz",
+      "county_5": "Pima",
+      "county_6": "Pinal",
+      "region": "Arizona",
+      "type": "multi",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "ARIZONA_MURAL_TRAIL_ANNUAL",
+    "priceId": "price_1SI1rrHw2ZCjSnG4vnWgSVxt",
+    "metadata": {
+      "group": "SASTFA",
+      "name": "AZ Mural Trail",
+      "area": "Tribal Nations",
+      "county_1": "Greenlee",
+      "county_2": "Graham",
+      "county_3": "Cochise",
+      "county_4": "Santa Cruz",
+      "county_5": "Pima",
+      "county_6": "Pinal",
+      "region": "Arizona",
+      "type": "single",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "EAGLE_RV_PARK_MULTI",
+    "priceId": "price_1SHywuHw2ZCjSnG4tyoFlUBi",
+    "metadata": {
+      "group": "Farook",
+      "name": "Eagle RV",
+      "region": "Hobbs NM",
+      "type": "multi",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "LEA_CO._RV_PARK_MULTI",
+    "priceId": "price_1SHypIHw2ZCjSnG4XsnClabP",
+    "metadata": {
+      "group": "Farook",
+      "name": "Lea Co. RV",
+      "region": "Hobbs NM",
+      "type": "multi",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "ZIA_RVILLAS_MULTI",
+    "priceId": "price_1SHykOHw2ZCjSnG4gtWjKlUD",
+    "metadata": {
+      "group": "Farook",
+      "name": "ZIA RVillas",
+      "region": "Hobbs NM",
+      "type": "multi",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "ENERGY_PLEX_MULTI",
+    "priceId": "price_1SHyddHw2ZCjSnG4TXqL527N",
+    "metadata": {
+      "group": "Farook",
+      "name": "Energy Plex RV",
+      "region": "Lovington NM",
+      "type": "multi",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "ARIZONA_MURAL_TRAIL_MULTI",
+    "priceId": "price_1SHyCYHw2ZCjSnG4kp5ivkAR",
+    "metadata": {
+      "group": "SASTFA",
+      "name": "AZ Mural Trail",
+      "region": "Arizona",
+      "county_1": "Greenlee",
+      "county_2": "Graham",
+      "county_3": "Cochise",
+      "county_4": "Santa Cruz",
+      "county_5": "Pima",
+      "county_6": "Pinal",
+      "area_7": "Tribal Nations",
+      "type": "multi",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "ARIZONA_MURAL_TRAIL",
+    "priceId": "price_1SHxh5Hw2ZCjSnG4V3PCyyhd",
+    "metadata": {
+      "group": "SASTFA",
+      "name": "AZ Mural Trail",
+      "region": "Arizona",
+      "county_1": "Greenlee",
+      "county_2": "Graham",
+      "county_3": "Cochise",
+      "county_4": "Santa Cruz",
+      "county_5": "Pima",
+      "county_6": "Pinal",
+      "area_7": "Tribal Nations",
+      "type": "single",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "ENERGY_PLEX_RV_PARK",
+    "priceId": "price_1SHrowHw2ZCjSnG4RfJUJNzz",
+    "metadata": {
+      "group": "Farook",
+      "name": "Energy Plex RV",
+      "region": "Lovington NM",
+      "type": "single",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "ZIA_RVILLAS",
+    "priceId": "price_1SHrnzHw2ZCjSnG4ZUxNX9VO",
+    "metadata": {
+      "group": "Farook",
+      "name": "ZIA RVillas",
+      "region": "Hobbs NM",
+      "type": "single",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "EAGLE_RV_PARK_MULTI_ANNUAL",
+    "priceId": "price_1SIAnBHw2ZCjSnG4kr0MPEgL",
+    "metadata": {
+      "group": "Farook",
+      "name": "Eagle RV Park",
+      "region": "Hobbs NM",
+      "type": "multi",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "EAGLE_RV_PARK_ANNUAL",
+    "priceId": "price_1SIAjVHw2ZCjSnG4M1tpmvb2",
+    "metadata": {
+      "group": "Farook",
+      "name": "Eagle RV Park",
+      "region": "Hobbs NM",
+      "type": "single",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "LEA_CO._RV_PARK_MULTI_ANNUAL",
+    "priceId": "price_1SIAeSHw2ZCjSnG4pH96mRjr",
+    "metadata": {
+      "group": "Farook",
+      "name": "LEA Co. RV Park",
+      "region": "Hobbs NM",
+      "type": "multi",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "LEA_CO._RV_PARK_ANNUAL",
+    "priceId": "price_1SIAZjHw2ZCjSnG4DuDCJ6Wf",
+    "metadata": {
+      "group": "Farook",
+      "name": "Lea Co",
+      "region": "Hobbs NM",
+      "type": "single",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "ZIA_RVILLAS_MULTI_ANNUAL",
+    "priceId": "price_1SIAPFHw2ZCjSnG4RIuCXXoP",
+    "metadata": {
+      "group": "Farook",
+      "name": "ZIA RVillas",
+      "region": "Hobbs NM",
+      "type": "multi",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "ZIA_RVILLAS_ANNUAL",
+    "priceId": "price_1SIAMxHw2ZCjSnG4xVQRSaDT",
+    "metadata": {
+      "group": "Farook",
+      "name": "ZIA RVillas",
+      "region": "Hobbs NM",
+      "type": "single",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "ENERGY_PLEX_MULTI_ANNUAL",
+    "priceId": "price_1SIAGKHw2ZCjSnG4j3bGHEHq",
+    "metadata": {
+      "group": "Farook",
+      "name": "Energy Plex RV Park",
+      "region": "Lovington NM",
+      "type": "multi",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "ENERGY_PLEX_ANNUAL",
+    "priceId": "price_1SI9swHw2ZCjSnG4NOdRJHOZ",
+    "metadata": {
+      "group": "Farook",
+      "name": "Energy Plex RV Park",
+      "region": "Lovington NM",
+      "type": "single",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "ARIZONA_MURAL_TRAIL_MULTI_ANNUAL",
+    "priceId": "price_1SI23BHw2ZCjSnG4C0Lu4KAU",
+    "metadata": {
+      "group": "SASTFA",
+      "name": "AZ Mural Trail",
+      "area_7": "Tribal Nations",
+      "county_1": "Greenlee",
+      "county_2": "Graham",
+      "county_3": "Cochise",
+      "county_4": "Santa Cruz",
+      "county_5": "Pima",
+      "county_6": "Pinal",
+      "region": "Arizona",
+      "type": "multi",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "ARIZONA_MURAL_TRAIL_ANNUAL",
+    "priceId": "price_1SI1rrHw2ZCjSnG4vnWgSVxt",
+    "metadata": {
+      "group": "SASTFA",
+      "name": "AZ Mural Trail",
+      "area": "Tribal Nations",
+      "county_1": "Greenlee",
+      "county_2": "Graham",
+      "county_3": "Cochise",
+      "county_4": "Santa Cruz",
+      "county_5": "Pima",
+      "county_6": "Pinal",
+      "region": "Arizona",
+      "type": "single",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "EAGLE_RV_PARK_MULTI",
+    "priceId": "price_1SHywuHw2ZCjSnG4tyoFlUBi",
+    "metadata": {
+      "group": "Farook",
+      "name": "Eagle RV",
+      "region": "Hobbs NM",
+      "type": "multi",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "LEA_CO._RV_PARK_MULTI",
+    "priceId": "price_1SHypIHw2ZCjSnG4XsnClabP",
+    "metadata": {
+      "group": "Farook",
+      "name": "Lea Co. RV",
+      "region": "Hobbs NM",
+      "type": "multi",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "ZIA_RVILLAS_MULTI",
+    "priceId": "price_1SHykOHw2ZCjSnG4gtWjKlUD",
+    "metadata": {
+      "group": "Farook",
+      "name": "ZIA RVillas",
+      "region": "Hobbs NM",
+      "type": "multi",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "ENERGY_PLEX_MULTI",
+    "priceId": "price_1SHyddHw2ZCjSnG4TXqL527N",
+    "metadata": {
+      "group": "Farook",
+      "name": "Energy Plex RV",
+      "region": "Lovington NM",
+      "type": "multi",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "ARIZONA_MURAL_TRAIL_MULTI",
+    "priceId": "price_1SHyCYHw2ZCjSnG4kp5ivkAR",
+    "metadata": {
+      "group": "SASTFA",
+      "name": "AZ Mural Trail",
+      "region": "Arizona",
+      "county_1": "Greenlee",
+      "county_2": "Graham",
+      "county_3": "Cochise",
+      "county_4": "Santa Cruz",
+      "county_5": "Pima",
+      "county_6": "Pinal",
+      "area_7": "Tribal Nations",
+      "type": "multi",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "ARIZONA_MURAL_TRAIL",
+    "priceId": "price_1SHxh5Hw2ZCjSnG4V3PCyyhd",
+    "metadata": {
+      "group": "SASTFA",
+      "name": "AZ Mural Trail",
+      "region": "Arizona",
+      "county_1": "Greenlee",
+      "county_2": "Graham",
+      "county_3": "Cochise",
+      "county_4": "Santa Cruz",
+      "county_5": "Pima",
+      "county_6": "Pinal",
+      "area_7": "Tribal Nations",
+      "type": "single",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "ENERGY_PLEX_RV_PARK",
+    "priceId": "price_1SHrowHw2ZCjSnG4RfJUJNzz",
+    "metadata": {
+      "group": "Farook",
+      "name": "Energy Plex RV",
+      "region": "Lovington NM",
+      "type": "single",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "ZIA_RVILLAS",
+    "priceId": "price_1SHrnzHw2ZCjSnG4ZUxNX9VO",
+    "metadata": {
+      "group": "Farook",
+      "name": "ZIA RVillas",
+      "region": "Hobbs NM",
+      "type": "single",
+      "term": "monthly"
+    }
+   }, 
+   {
+    "productName": "EAGLE_RV_PARK_MULTI_ANNUAL",
+    "priceId": "price_1SIAnBHw2ZCjSnG4kr0MPEgL",
+    "metadata": {
+      "group": "Farook",
+      "name": "Eagle RV Park",
+      "region": "Hobbs NM",
+      "type": "multi",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "EAGLE_RV_PARK_ANNUAL",
+    "priceId": "price_1SIAjVHw2ZCjSnG4M1tpmvb2",
+    "metadata": {
+      "group": "Farook",
+      "name": "Eagle RV Park",
+      "region": "Hobbs NM",
+      "type": "single",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "LEA_CO._RV_PARK_MULTI_ANNUAL",
+    "priceId": "price_1SIAeSHw2ZCjSnG4pH96mRjr",
+    "metadata": {
+      "group": "Farook",
+      "name": "LEA Co. RV Park",
+      "region": "Hobbs NM",
+      "type": "multi",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "LEA_CO._RV_PARK_ANNUAL",
+    "priceId": "price_1SIAZjHw2ZCjSnG4DuDCJ6Wf",
+    "metadata": {
+      "group": "Farook",
+      "name": "Lea Co",
+      "region": "Hobbs NM",
+      "type": "single",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "ZIA_RVILLAS_MULTI_ANNUAL",
+    "priceId": "price_1SIAPFHw2ZCjSnG4RIuCXXoP",
+    "metadata": {
+      "group": "Farook",
+      "name": "ZIA RVillas",
+      "region": "Hobbs NM",
+      "type": "multi",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "ZIA_RVILLAS_ANNUAL",
+    "priceId": "price_1SIAMxHw2ZCjSnG4xVQRSaDT",
+    "metadata": {
+      "group": "Farook",
+      "name": "ZIA RVillas",
+      "region": "Hobbs NM",
+      "type": "single",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "ENERGY_PLEX_MULTI_ANNUAL",
+    "priceId": "price_1SIAGKHw2ZCjSnG4j3bGHEHq",
+    "metadata": {
+      "group": "Farook",
+      "name": "Energy Plex RV Park",
+      "region": "Lovington NM",
+      "type": "multi",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "ENERGY_PLEX_ANNUAL",
+    "priceId": "price_1SI9swHw2ZCjSnG4NOdRJHOZ",
+    "metadata": {
+      "group": "Farook",
+      "name": "Energy Plex RV Park",
+      "region": "Lovington NM",
+      "type": "single",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "ARIZONA_MURAL_TRAIL_MULTI_ANNUAL",
+    "priceId": "price_1SI23BHw2ZCjSnG4C0Lu4KAU",
+    "metadata": {
+      "group": "SASTFA",
+      "name": "AZ Mural Trail",
+      "area_7": "Tribal Nations",
+      "county_1": "Greenlee",
+      "county_2": "Graham",
+      "county_3": "Cochise",
+      "county_4": "Santa Cruz",
+      "county_5": "Pima",
+      "county_6": "Pinal",
+      "region": "Arizona",
+      "type": "multi",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "ARIZONA_MURAL_TRAIL_ANNUAL",
+    "priceId": "price_1SI1rrHw2ZCjSnG4vnWgSVxt",
+    "metadata": {
+      "group": "SASTFA",
+      "name": "AZ Mural Trail",
+      "area": "Tribal Nations",
+      "county_1": "Greenlee",
+      "county_2": "Graham",
+      "county_3": "Cochise",
+      "county_4": "Santa Cruz",
+      "county_5": "Pima",
+      "county_6": "Pinal",
+      "region": "Arizona",
+      "type": "single",
+      "term": "annual"
+    }
+  },
+  {
+    "productName": "EAGLE_RV_PARK_MULTI",
+    "priceId": "price_1SHywuHw2ZCjSnG4tyoFlUBi",
+    "metadata": {
+      "group": "Farook",
+      "name": "Eagle RV",
+      "region": "Hobbs NM",
+      "type": "multi",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "LEA_CO._RV_PARK_MULTI",
+    "priceId": "price_1SHypIHw2ZCjSnG4XsnClabP",
+    "metadata": {
+      "group": "Farook",
+      "name": "Lea Co. RV",
+      "region": "Hobbs NM",
+      "type": "multi",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "ZIA_RVILLAS_MULTI",
+    "priceId": "price_1SHykOHw2ZCjSnG4gtWjKlUD",
+    "metadata": {
+      "group": "Farook",
+      "name": "ZIA RVillas",
+      "region": "Hobbs NM",
+      "type": "multi",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "ENERGY_PLEX_MULTI",
+    "priceId": "price_1SHyddHw2ZCjSnG4TXqL527N",
+    "metadata": {
+      "group": "Farook",
+      "name": "Energy Plex RV",
+      "region": "Lovington NM",
+      "type": "multi",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "ARIZONA_MURAL_TRAIL_MULTI",
+    "priceId": "price_1SHyCYHw2ZCjSnG4kp5ivkAR",
+    "metadata": {
+      "group": "SASTFA",
+      "name": "AZ Mural Trail",
+      "region": "Arizona",
+      "county_1": "Greenlee",
+      "county_2": "Graham",
+      "county_3": "Cochise",
+      "county_4": "Santa Cruz",
+      "county_5": "Pima",
+      "county_6": "Pinal",
+      "area_7": "Tribal Nations",
+      "type": "multi",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "ARIZONA_MURAL_TRAIL",
+    "priceId": "price_1SHxh5Hw2ZCjSnG4V3PCyyhd",
+    "metadata": {
+      "group": "SASTFA",
+      "name": "AZ Mural Trail",
+      "region": "Arizona",
+      "county_1": "Greenlee",
+      "county_2": "Graham",
+      "county_3": "Cochise",
+      "county_4": "Santa Cruz",
+      "county_5": "Pima",
+      "county_6": "Pinal",
+      "area_7": "Tribal Nations",
+      "type": "single",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "ENERGY_PLEX_RV_PARK",
+    "priceId": "price_1SHrowHw2ZCjSnG4RfJUJNzz",
+    "metadata": {
+      "group": "Farook",
+      "name": "Energy Plex RV",
+      "region": "Lovington NM",
+      "type": "single",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "ZIA_RVILLAS",
+    "priceId": "price_1SHrnzHw2ZCjSnG4ZUxNX9VO",
+    "metadata": {
+      "group": "Farook",
+      "name": "ZIA RVillas",
+      "region": "Hobbs NM",
+      "type": "single",
+      "term": "monthly"
+    }
+  },
+  {
+    "productName": "Multi-Park Advertiser",
+    "priceId": "price_1RkRP4Hw2ZCjSnG4RRwU72uG",
+    "metadata": {}
+  },
+  {
+    "productName": "One Park Advertiser",
+    "priceId": "price_1RkRAjHw2ZCjSnG490fMFuLK",
+    "metadata": {}
+  },
+  {
+    "productName": "Done For You - One-Time Set-Up",
+    "priceId": "price_1RkQpgHw2ZCjSnG40xVZQLx3",
+    "metadata": {}
+  }
+]
