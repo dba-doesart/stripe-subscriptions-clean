@@ -22,11 +22,12 @@ app.use((req, res, next) => {
   next();
 });
 
-// Create Checkout Session for single park advertiser form
+// Create Checkout Session using direct priceId
 app.post("/api/checkout", async (req, res) => {
   console.log("🚀 /api/checkout route triggered");
 
   const {
+    priceId,
     businessName,
     ownerEmail,
     ownerPhone,
@@ -41,17 +42,8 @@ app.post("/api/checkout", async (req, res) => {
   console.log("📩 Incoming advertiser form:", req.body);
 
   // Validate required fields
-  if (!businessName || !ownerEmail || !park || !billingCycle) {
+  if (!priceId || !businessName || !ownerEmail || !billingCycle) {
     return res.status(400).json({ error: "Missing required fields" });
-  }
-
-  // Find matching park entry in metadata config
-  const parkEntry = stripeMetadata.find(p => p.productName === park);
-  const priceId =
-    billingCycle === "monthly" ? parkEntry?.priceMonthlyId : parkEntry?.priceAnnualId;
-
-  if (!priceId) {
-    return res.status(404).json({ error: `No price ID found for ${park} (${billingCycle})` });
   }
 
   // Build metadata from form fields
