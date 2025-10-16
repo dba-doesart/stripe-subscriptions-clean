@@ -70,11 +70,19 @@ app.post("/api/checkout", async (req, res) => {
       cancel_url: "https://campgroundguides.com/cancel"
     });
 
-    console.log("✅ Stripe session created:", session.url);
+    console.log("✅ Stripe session created");
+    console.log("🔗 Stripe session URL:", session.url);
+
+    if (!session.url) {
+      console.error("❌ Stripe session URL is missing");
+      return res.status(500).json({ error: "Stripe session URL is missing" });
+    }
+
     res.status(200).json({ checkoutUrl: session.url });
   } catch (err) {
-    console.error("❌ Stripe error:", err);
-    res.status(500).json({ error: "Stripe session creation failed" });
+    console.error("❌ Stripe error:", err.message);
+    console.error("🔍 Full error object:", JSON.stringify(err, null, 2));
+    res.status(500).json({ error: err.message || "Stripe session creation failed" });
   }
 });
 
