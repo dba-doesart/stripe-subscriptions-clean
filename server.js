@@ -73,9 +73,9 @@ app.post("/api/checkout", async (req, res) => {
     console.log("✅ Stripe session created");
     console.log("🔗 Stripe session URL:", session.url);
 
-    if (!session.url) {
-      console.error("❌ Stripe session URL is missing");
-      return res.status(500).json({ error: "Stripe session URL is missing" });
+    if (!session || !session.url) {
+      console.error("❌ Stripe session is missing or incomplete:", session);
+      return res.status(500).json({ error: "Stripe session creation failed — no URL returned" });
     }
 
     res.status(200).json({ checkoutUrl: session.url });
