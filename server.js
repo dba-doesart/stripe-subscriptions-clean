@@ -57,7 +57,9 @@ app.post("/api/checkout", async (req, res) => {
     res.status(500).json({ error: "Stripe session creation failed" });
   }
 });
-
+app.get("/test", (req, res) => {
+  res.json({ message: "CORS is working!" });
+});
 // Start server
 app.listen(PORT, () => {
   console.log(`✅ Server running on port ${PORT}`);
