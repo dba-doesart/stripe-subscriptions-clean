@@ -18,6 +18,8 @@ app.use(express.json());
 
 // Create Checkout Session for single park advertiser form
 app.post("/api/checkout", async (req, res) => {
+  console.log("🚀 /api/checkout route triggered");
+
   const {
     businessName,
     ownerEmail,
