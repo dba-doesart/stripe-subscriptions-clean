@@ -2,7 +2,9 @@ require('dotenv').config(); // Load environment variables
 
 const express = require("express");
 const app = express();
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY); // Securely load Stripe key from .env
+
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+
 const PORT = process.env.PORT || 3000;
 
 const fs = require("fs");
@@ -23,6 +25,8 @@ app.use(express.json());
 // Create Checkout Session
 app.post("/api/checkout", async (req, res) => {
   const { productName, priceId, customerEmail } = req.body;
+
+  console.log("📩 Incoming request:", req.body);
 
   if (!productName || !priceId || !customerEmail) {
     return res.status(400).json({ error: "Missing required fields: productName, priceId, or customerEmail" });
