@@ -1,6 +1,8 @@
+require('dotenv').config(); // Load environment variables
+
 const express = require("express");
 const app = express();
-const stripe = require("stripe")("sk_test_YOUR_SECRET_KEY"); // Replace with your actual Stripe secret key
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY); // Securely load Stripe key from .env
 const PORT = process.env.PORT || 3000;
 
 const fs = require("fs");
