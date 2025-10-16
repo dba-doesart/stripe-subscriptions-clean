@@ -16,6 +16,12 @@ const stripeMetadata = JSON.parse(fs.readFileSync(metadataPath, "utf-8"));
 
 app.use(express.json());
 
+// 🔍 Global request logging
+app.use((req, res, next) => {
+  console.log(`🌐 Incoming ${req.method} request to ${req.url}`);
+  next();
+});
+
 // Create Checkout Session for single park advertiser form
 app.post("/api/checkout", async (req, res) => {
   console.log("🚀 /api/checkout route triggered");
