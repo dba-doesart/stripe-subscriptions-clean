@@ -1,40 +1,59 @@
-form.addEventListener("submit", async (e) => {
-  e.preventDefault();
+import { parkConfig } from "./parkConfig.js";
 
-  const selectedPark = parkConfig.parks.find(p => p.id === parkSelect.value);
-  const cycle = billingCycle.value;
+// Helper: Lookup Stripe priceId from config
+function getPriceId(selectedPark, billingCycle, paymentMethod) {
+  const park = parkConfig.parks.find(p => p.name === selectedPark);
+  return park?.prices?.[billingCycle]?.[paymentMethod]?.priceId || null;
+}
 
-  const priceId =
-    cycle === "monthly"
-      ? selectedPark.priceIdMonthly
-      : selectedPark.priceIdAnnual ?? selectedPark.priceIdMonthly;
+export const createSale = () => {};
+export const inputToMultiAdvertiser = () => {};
+export const inputToSingleAdvertiser = () => {};
+export const stateToAbbreviation = () => {};
+export const validateForm = () => {};
 
-  const productName = `${selectedPark.name.toUpperCase().replace(/ /g, "_")}_${selectedPark.region}`;
-  const customerEmail = "info@campgroundguides.com"; // You can make this dynamic later
+export const advertToCheckout = async () => {
+  const park = "Eagle Park"; // Replace with dynamic form value
+  const billingCycle = "monthly"; // Replace with form value
+  const paymentMethod = "card"; // Replace with form value
+
+  const priceId = getPriceId(park, billingCycle, paymentMethod);
+
+  if (!priceId) {
+    alert("No Stripe price ID found for this selection.");
+    return;
+  }
 
   const payload = {
-    productName,
     priceId,
-    customerEmail
+    businessName: "dba",
+    ownerEmail: "info@campgroundguides.com",
+    ownerPhone: "6026727327",
+    responsibleParty: "Diana",
+    states: ["NM"],
+    parks: [park],
+    billingCycle,
+    paymentMethod,
+    type: "multi"
   };
 
-  const endpoint = "https://stripe-subscriptions-clean.onrender.com/api/checkout";
-
   try {
-    const res = await fetch(endpoint, {
+    const response = await fetch("https://stripe-subscriptions-clean.onrender.com/api/checkout", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload)
     });
 
-    const data = await res.json();
-    if (data.url) {
-      window.location.href = data.url;
+    const data = await response.json();
+
+    if (data.checkoutUrl) {
+      window.location.href = data.checkoutUrl;
     } else {
+      console.error("❌ No checkout URL returned:", data);
       alert("Something went wrong. Please try again.");
     }
   } catch (err) {
-    console.error("Submission failed:", err);
-    alert("Something went wrong. Please try again.");
+    console.error("❌ Fetch error:", err);
+    alert("Unable to reach the server. Please try again later.");
   }
-});
+};
